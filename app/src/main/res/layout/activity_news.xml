@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.george.summer.gerogenews.NewsActivity">
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="#f00"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="乔治新闻"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:typeface="serif"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/framelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/radiogroup1"
+        android:layout_below="@+id/linearlayout1"></FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/radiogroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#82A4A5"
+        android:orientation="horizontal"
+
+        >
+
+        <RadioButton
+            android:id="@+id/radiobtn1"
+            style="@style/RadioButtomTheme"
+            android:drawableTop="@drawable/home_selector"
+            android:text="新闻"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radiobtn2"
+            style="@style/RadioButtomTheme"
+            android:drawableTop="@drawable/gov_selector"
+            android:text="热点"
+            />
+
+        <RadioButton
+            android:id="@+id/radiobtn3"
+            style="@style/RadioButtomTheme"
+            android:drawableTop="@drawable/smartservice_selector"
+            android:text="收藏"
+            />
+
+        <RadioButton
+            style="@style/RadioButtomTheme"
+            android:id="@+id/radiobtn4"
+            android:drawableTop="@drawable/setting_selector"
+            android:text="设置"
+            />
+    </RadioGroup>
+</RelativeLayout>

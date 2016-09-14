@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="200dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:id="@+id/tv_title11"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="20sp"
+        android:textColor="#000"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tv_title11"
+        android:id="@+id/linearLayout">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/img1"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/img2"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/img3"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Medium Text"
+        android:id="@+id/tv_sourse1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Medium Text"
+        android:id="@+id/tv_replycount1"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout"
+        />
+</RelativeLayout>
+
